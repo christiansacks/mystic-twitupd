@@ -1,4 +1,4 @@
-/mystic/log/twitupd.log {
+/mystic/logs/twitupd.log {
 	daily
 	rotate 7
 	compress
