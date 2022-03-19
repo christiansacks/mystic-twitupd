@@ -7,3 +7,7 @@ using crontab, you could set it up thus;
 ```
 0 0 * * * /mystic/scripts/twitupd.sh && logger -t "mystic_twitupd.sh" "[crontab] blacklist.txt updated"
 ```
+
+## recommended logrotate config
+in the directory `logrotate.d` there's a file called twitupd which is a suggested basic log rotation config
+if you change the mystic dirs in the main twitupd.sh, make sure to change the log file location in the logrotate.d config too
