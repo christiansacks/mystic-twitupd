@@ -1,0 +1,9 @@
+/mystic/log/twitupd.log {
+	daily
+	rotate 7
+	compress
+	delaycompress
+	missingok
+	notifempty
+	create 644 root root
+}
