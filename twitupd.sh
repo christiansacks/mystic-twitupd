@@ -18,7 +18,6 @@ URLS=(
 )
 
 IFS=$'\n'
-#for I in $(curl -s https://erb.pw/blacklist); do 
 for URL in ${URLS[@]}; do
   for I in $(curl -s $URL); do 
     CHECK=$(grep -c $I $MYS_DATA/blacklist.txt)
