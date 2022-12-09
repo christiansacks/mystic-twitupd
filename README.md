@@ -5,7 +5,7 @@ global blacklist update script thingy
 using crontab, you could set it up thus;
 
 ```
-0 0 * * * /mystic/scripts/twitupd.sh && logger -t "mystic_twitupd.sh" "[crontab] blacklist.txt updated"
+0 0 * * * /mystic/scripts/twitupd.sh /path/to/mystic && logger -t "mystic_badips" "[crontab] blacklist.txt/denylist.txt updated"
 ```
 
 ## recommended logrotate config
